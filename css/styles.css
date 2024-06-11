@@ -2,7 +2,7 @@ body {
     font-family: 'Quicksand', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f8ff;
+    background-color: #ffe4e1;
     color: #333;
 }
 
@@ -14,63 +14,139 @@ body {
 }
 
 header {
-    background-color: #ffccf2;
+    background-color: #fff;
     padding: 20px 0;
     text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-    color: #333;
+header .logo img {
+    height: 50px;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 20px 0 0;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 nav ul li {
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
-main {
-    background-color: #fff;
+.hero {
+    text-align: center;
     padding: 50px 0;
 }
 
-section {
-    margin-bottom: 50px;
-}
-
-h2 {
-    font-size: 2em;
-    color: #ff69b4;
+.hero h1 {
+    font-size: 2.5em;
+    color: #333;
     margin-bottom: 20px;
 }
 
-p {
+.hero p {
     font-size: 1.2em;
-    line-height: 1.5;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    margin-bottom: 30px;
+}
+
+.btn-primary, .btn-secondary {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #ff6347;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #ff6347;
+    border: 2px solid #ff6347;
+}
+
+.cute-cats img {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 30px;
 }
 
 footer {
-    background-color: #ffccf2;
+    background-color: #fff;
     text-align: center;
     padding: 20px 0;
+    margin-top: 50px;
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
 }
 
 footer p {
     margin: 0;
     color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header .logo img {
+        height: 40px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .btn-primary, .btn-secondary {
+        padding: 8px 16px;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo img {
+        height: 30px;
+    }
+
+    .hero h1 {
+        font-size: 1.5em;
+    }
+
+    .hero p {
+        font-size: 0.9em;
+    }
+
+    .btn-primary, .btn-secondary {
+        padding: 6px 12px;
+        font-size: 0.9em;
+    }
 }
