@@ -2,7 +2,7 @@ body {
     font-family: 'Quicksand', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffe4e1;
+    background-color: #ffe4e1; /* Light peach background color */
     color: #333;
 }
 
@@ -18,6 +18,8 @@ header {
     padding: 20px 0;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 header .logo img {
@@ -45,8 +47,11 @@ nav ul li a {
 }
 
 .hero {
+    background-color: #fff;
+    border-radius: 15px;
     text-align: center;
-    padding: 50px 0;
+    padding: 50px 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .hero h1 {
@@ -70,10 +75,11 @@ nav ul li a {
     padding: 10px 20px;
     border-radius: 5px;
     font-weight: bold;
+    font-size: 1.1em;
 }
 
 .btn-primary {
-    background-color: #ff6347;
+    background-color: #ff6347; /* Tomato red */
     color: #fff;
     margin-right: 15px;
 }

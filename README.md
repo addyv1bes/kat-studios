@@ -1,3 +1,5 @@
-# kat-studios
+# Kat Studios
 
-Placeholder for this website design :3
+---
+
+This open-source release is coming soon! Check back soon for more updates.
