@@ -4,7 +4,11 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
-  - package-ecosystem: "composer"
+  - package-ecosystem: "yarn"
     directory: "/"
     schedule:
-      interval: "weekly"
+      interval: "daily"
+    - package-ecosystem: "gitsubmodule"
+    directory: "/"
+    schedule:
+      interval: "daily"
